@@ -1,0 +1,26 @@
+@media (max-width: 480px) {
+
+    /* Header */
+
+    /* Projects */
+    .project-titel {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+
+    /* Projects */
+    .project-titel {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+}

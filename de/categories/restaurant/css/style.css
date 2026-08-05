@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main-projects */
+.project-titel {
+    display: flex;
+    align-items: start;
+}
+
+.project-titel button {
+    border: none;
+    line-height: 1.5;
+    font-size: 1.3em;
+    background-color: rgb(100, 60, 161);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-projects {
+    margin-top: 150px;
+}

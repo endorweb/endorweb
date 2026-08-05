@@ -1,0 +1,114 @@
+/* --------------- greeting --------------- */
+#greeting {
+    background-color: rgb(100, 60, 161);
+    color: rgb(255, 230, 0);
+    padding: 27px 30px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.5;
+    z-index: 8000;
+
+    /* for background-color: rgb(100, 60, 161); */
+    display: none;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+/* --------------- My-Skills --------------- */
+.about>button {
+    background-color: #3cfe2e;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#skills {}
+
+#skills.show {
+    padding: 20px 50px;
+    background-color: rgba(232, 232, 232, 0.495);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#skills>div {
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    padding: 12px 5px;
+}
+
+#skills>div>p {
+    font-size: 1.1em;
+}
+
+/* --------------- Skills > quote --------------- */
+.sub-skills {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.quote::before {
+    content: "";
+    background-color: rgb(100, 60, 161);
+    width: 30%;
+    height: 8px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.quote::after {
+    content: "";
+    background-color: rgb(60, 254, 46);
+    width: 20%;
+    height: 8px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.sub-skills:nth-child(1)>.quote::after {
+    width: 23%;
+}
+
+.sub-skills:nth-child(2)>.quote::after {
+    width: 22%;
+}
+
+.sub-skills:nth-child(3)>.quote::after {
+    width: 16%;
+}
+
+.sub-skills:nth-child(4)>.quote::after {
+    width: 24%;
+}
+
+
+/* --------------- Dark Mode --------------- */
+#btn {
+    /* position: fixed;
+    bottom: 5%;
+    right: 10px; */
+    z-index: 1000;
+    border: none;
+    font-size: 28px;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: rgb(48, 43, 52);
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    padding: 3px;
+    box-shadow: 4px 6px 3px 2px rgba(0, 0, 0, 0.231);
+}
