@@ -60,7 +60,7 @@ latestProjects.forEach(project => {
     <div class="switch-dark">
     <h3>${project.titel}</h3>
     <p>${project.desc}</p>
-    <a href="${project.link}" target="_blank"><button>View Demo</button></a>
+    <a href="${project.link}" target="_blank"><button>Live Demo</button></a>
     </div>
     
     </div>
