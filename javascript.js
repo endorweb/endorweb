@@ -35,12 +35,12 @@ btn.onclick = function () {
     if (skillsVisible === false) {
         skillsElement.style.display = "block";
         skillsElement.classList.add("show")
-        btn.textContent = "Hide My Skills"
+        btn.textContent = "Skills ▲"
         skillsVisible = true;
 
     } else {
         skillsElement.style.display = "none";
-        btn.textContent = "See My Skills";
+        btn.textContent = "Skills ▼";
         skillsVisible = false;
     }
 }

@@ -35,12 +35,12 @@ btn.onclick = function () {
     if (skillsVisible === false) {
         skillsElement.style.display = "block";
         skillsElement.classList.add("show")
-        btn.textContent = "إخفاء"
+        btn.textContent = "إخفاء ▲"
         skillsVisible = true;
 
     } else {
         skillsElement.style.display = "none";
-        btn.textContent = "مهاراتي";
+        btn.textContent = "مهاراتي ▼";
         console.log("Button after change:", btn.textContent);
 
         skillsVisible = false;
