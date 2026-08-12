@@ -189,11 +189,11 @@
     }
 
 
-    /* About */
+    /* ______ About ______ */
     .sub-about {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         gap: 50px;
     }
 
@@ -204,28 +204,30 @@
     }
 
     .about {
-        text-align: center;
-        margin: 0 auto;
+        text-align: left;
     }
 
     .about p {
         width: 100%;
         margin-bottom: 20px;
-        font-size: 1.3em;
+        font-size: 1.1em;
+        text-align: left;
+        line-height: 1.8;
+
     }
 
     .about>h2 {
         font-size: 1.8em;
-        text-align: center;
+        text-align: left;
     }
 
     /* Skills > quote */
     .about>button {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     #skills>div>p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .sub-skills {
@@ -266,10 +268,10 @@
     }
 
     .project-titel {
-        text-align: center;
+        text-align: left;
         padding: 0 30px;
         display: flex;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
     }
 
@@ -287,7 +289,8 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        text-align: center;
+        text-align: left;
+        margin: 0 20px;
     }
 
     .project-box>div {
@@ -300,12 +303,12 @@
     }
 
     .project-box>div>a>button {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     /* hero-section */
     .main-hero {
-        text-align: center;
+        text-align: left;
     }
 
     .main-hero h2 {
@@ -314,6 +317,11 @@
 
     .hero {
         line-height: 1.5;
+        text-align: left;
+    }
+
+    .hero>p {
+        font-size: 2em;
     }
 
     /* Social-Media */
@@ -323,11 +331,11 @@
 
     /* Services */
     .main-contact {
-        text-align: center;
+        text-align: left;
     }
 
     .services-titel {
-        text-align: center;
+        text-align: left;
     }
 
     .services-titel h2 {
@@ -350,7 +358,8 @@
     }
 
     .info-srvices>p {
-        font-size: 1.5em;
+        font-size: 1.2em;
+        line-height: 1.8;
     }
 
     /* Contact */
@@ -391,7 +400,7 @@
 
     .contact-titel p {
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .sub-contact {
@@ -412,12 +421,13 @@
     /* Project Start */
     .ps-titel>h2 {
         font-size: 1.8em;
+        text-align: left;
     }
 
     .ps-titel>p {
-        font-size: 1.3em;
-        margin: 0 auto;
+        font-size: 1.2em;
         width: 100%;
+        text-align: left;
     }
 
     input {
@@ -429,11 +439,11 @@
     }
 
     form>button {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .copyright {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
 }
@@ -546,6 +556,7 @@
     .project-titel p {
         width: 100%;
         padding-right: revert;
+        font-size: 1.2em;
 
     }
 
@@ -589,7 +600,7 @@
     }
 
     .services-titel p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         width: 100%;
     }
 
@@ -653,7 +664,7 @@
     }
 
     form>button {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .copyright {

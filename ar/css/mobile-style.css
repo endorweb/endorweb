@@ -198,7 +198,7 @@
     .sub-about {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         gap: 50px;
     }
 
@@ -209,20 +209,20 @@
     }
 
     .about {
-        text-align: center;
-        margin: 0 auto;
+        text-align: right;
     }
 
     .about p {
         width: 100%;
         margin-bottom: 20px;
-        font-size: 1.3em;
-        line-height: 1.6;
+        font-size: 1.4em;
+        line-height: 1.8;
+        text-align: right;
     }
 
     .about>h2 {
         font-size: 2em;
-        text-align: center;
+        text-align: right;
     }
 
     /* Skills > quote */
@@ -271,10 +271,10 @@
     }
 
     .project-titel {
-        text-align: center;
+        text-align: right;
         padding: 0 30px;
         display: flex;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
     }
 
@@ -293,7 +293,8 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        text-align: center;
+        text-align: right;
+        margin: 0 20px;
     }
 
     .project-box>div {
@@ -314,7 +315,7 @@
 
     /* hero-section */
     .main-hero {
-        text-align: center;
+        text-align: right;
     }
 
     .main-hero h2 {
@@ -323,6 +324,7 @@
 
     .hero {
         line-height: 1.5;
+        text-align: right;
     }
 
     /* Social-Media */
@@ -332,11 +334,11 @@
 
     /* Services */
     .main-contact {
-        text-align: center;
+        text-align: right;
     }
 
     .services-titel {
-        text-align: center;
+        text-align: right;
     }
 
     .services-titel h2 {
@@ -359,7 +361,7 @@
     }
 
     .info-srvices>p {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     /* Contact */
@@ -415,18 +417,19 @@
     }
 
     .whatsapp-button {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     /* Project Start */
     .ps-titel>h2 {
         font-size: 2em;
+        text-align: right;
     }
 
     .ps-titel>p {
         font-size: 1.3em;
-        margin: 0 auto;
         width: 100%;
+        text-align: right;
     }
 
     input {
@@ -438,7 +441,7 @@
     }
 
     form>button {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .copyright {

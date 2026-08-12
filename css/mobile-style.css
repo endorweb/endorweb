@@ -203,7 +203,7 @@
     .sub-about {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         gap: 50px;
     }
 
@@ -214,28 +214,29 @@
     }
 
     .about {
-        text-align: center;
-        margin: 0 auto;
+        text-align: left;
     }
 
     .about p {
         width: 100%;
         margin-bottom: 20px;
-        font-size: 1.3em;
+        font-size: 1.1em;
+        text-align: left;
+        line-height: 1.8;
     }
 
     .about>h2 {
         font-size: 1.8em;
-        text-align: center;
+        text-align: left;
     }
 
     /* Skills > quote */
     .about>button {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     #skills>div>p {
-        font-size: 1.3em;
+        font-size: 1.1em;
         line-height: 1.5;
     }
 
@@ -277,10 +278,10 @@
     }
 
     .project-titel {
-        text-align: center;
+        text-align: left;
         padding: 0 30px;
         display: flex;
-        align-items: center;
+        align-items: start;
         flex-direction: column;
     }
 
@@ -298,15 +299,12 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
-        text-align: center;
+        text-align: left;
+        margin: 0 20px;
     }
 
     .project-box>div {
-        padding: 30px 20px;
-    }
-
-    .project-box>div>p {
-        /* margin: 0 auto; */
+        padding: 10px 20px 30px;
     }
 
     .project-box>div>h3 {
@@ -315,12 +313,12 @@
     }
 
     .project-box>div>a>button {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     /* ______ hero-section ______ */
     .main-hero {
-        text-align: center;
+        text-align: left;
     }
 
     .main-hero h2 {
@@ -329,6 +327,16 @@
 
     .hero {
         line-height: 1.5;
+        text-align: left;
+    }
+
+    .hero>p {
+        font-size: 2em;
+    }
+
+    .hero>span>p {
+        font-size: 1.3em;
+        line-height: 1.8;
     }
 
     /* ______ Social-Media ______ */
@@ -337,12 +345,8 @@
     }
 
     /* ______ Services ______ */
-    .main-contact {
-        text-align: center;
-    }
-
     .services-titel {
-        text-align: center;
+        text-align: left;
     }
 
     .services-titel h2 {
@@ -361,12 +365,13 @@
     }
 
     .info-srvices>span {
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
 
     .info-srvices>p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
+
 
     /* ______ Contact ______ */
     .contact-titel h2 {
@@ -406,7 +411,7 @@
 
     .contact-titel p {
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .sub-contact {
@@ -421,18 +426,19 @@
     }
 
     .whatsapp-button {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     /* ______ Project Start ______ */
     .ps-titel>h2 {
         font-size: 1.8em;
+        text-align: left;
     }
 
     .ps-titel>p {
-        font-size: 1.3em;
-        margin: 0 auto;
+        font-size: 1.2em;
         width: 100%;
+        text-align: left;
     }
 
     input {
@@ -444,11 +450,13 @@
     }
 
     form>button {
-        font-size: 1.5em;
+        font-size: 1.1em;
+
     }
 
     .copyright {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        line-height: 1.5;
     }
 
 }
@@ -514,7 +522,8 @@
         width: 100%;
         text-align: start;
         margin-bottom: 20px;
-        font-size: 1.3em;
+        font-size: 1.1em;
+        line-height: 1.7;
     }
 
     .about>h2 {
@@ -523,7 +532,7 @@
 
     /* Skills > quote */
     .about>button {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     #skills>div>p {
@@ -585,12 +594,10 @@
     }
 
     .project-box>div>a>button {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     /* hero-section */
-    .main-hero {}
-
     .main-hero h2 {
         font-size: 1.8em;
     }
@@ -610,7 +617,7 @@
     }
 
     .services-titel p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         width: 100%;
     }
 
@@ -621,11 +628,11 @@
     }
 
     .info-srvices>span {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
     .info-srvices>p {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     /* Contact */
@@ -635,7 +642,7 @@
 
     .contact-titel p {
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .sub-contact {
@@ -650,7 +657,7 @@
     }
 
     .whatsapp-button {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     /* Project Start */
@@ -659,7 +666,7 @@
     }
 
     .ps-titel>p {
-        font-size: 1.3em;
+        font-size: 1.1em;
         width: 100%;
 
     }
@@ -673,11 +680,12 @@
     }
 
     form>button {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
     .copyright {
-        font-size: 1.3em;
+        font-size: 1.2em;
+        line-height: 1.5;
     }
 
 
