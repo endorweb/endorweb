@@ -176,11 +176,11 @@
     }
 
     .project-hamburger {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
-    .banner-button>a>button {
-        font-size: 1.5em;
+    .banner-ps>form>.desc-ps>label>textarea {
+        height: 210px;
     }
 
 
@@ -626,11 +626,7 @@
     }
 
     .project-hamburger {
-        font-size: 1.5em;
-    }
-
-    .banner-button>a>button {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
 

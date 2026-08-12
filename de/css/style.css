@@ -167,7 +167,6 @@ body {
     color: white;
     margin-bottom: 100px;
     margin-top: 50px;
-
     position: relative;
 }
 
@@ -258,7 +257,7 @@ body {
 }
 
 .banner-ps>form>.desc-ps>label>textarea {
-    height: 275px;
+    height: 260px;
 }
 
 /* About */

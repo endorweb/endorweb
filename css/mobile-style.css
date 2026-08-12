@@ -178,15 +178,15 @@
     }
 
     .project-hamburger {
-        font-size: 1.4em;
-    }
-
-    .banner-button>a>button {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     .banner-ps {
         top: 6%;
+    }
+
+    .banner-ps>form>.desc-ps>label>textarea {
+        height: 210px;
     }
 
     /* About */
@@ -636,12 +636,12 @@
     }
 
     .project-hamburger {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 
-    .banner-button>a>button {
+    /* .banner-button>a>button {
         font-size: 1.5em;
-    }
+    } */
 
     .banner-ps {
         top: 6%;
