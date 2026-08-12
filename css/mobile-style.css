@@ -292,6 +292,7 @@
     .project-titel p {
         width: 100%;
         padding-right: revert;
+        font-size: 1.2em;
 
     }
 
@@ -354,7 +355,7 @@
     }
 
     .services-titel p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         width: 100%;
     }
 
@@ -426,7 +427,7 @@
     }
 
     .whatsapp-button {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     /* ______ Project Start ______ */
