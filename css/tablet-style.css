@@ -274,9 +274,11 @@
 @media(min-width: 1308px) {
 
     .sub-header>div>nav>ul>li>a {
-
         font-size: 1.2em;
+    }
 
+    .order {
+        margin-top: -30px;
     }
 
     .dropdown>button {
