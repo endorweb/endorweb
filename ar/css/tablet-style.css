@@ -73,8 +73,16 @@
     }
 }
 
+/* @media(min-width:1250px) and (max-width:1300px) {
+    .main-banner {
+        padding-top: 140px;
+    }
+} */
 
-@media(min-width:1024px) and (max-width:1100px) {
+@media(min-width:1024px) and (max-width:1300px) {
+    .main-banner {
+        padding-top: 130px;
+    }
 
     /* Banner -> beneftits */
     .sub-banner {
@@ -85,7 +93,7 @@
     }
 
     .order {
-        margin-top: -60px;
+        margin-top: -30px;
         font-size: 1em;
     }
 
@@ -94,7 +102,6 @@
         opacity: 1;
         width: 50vw;
         transform: scale(1.5);
-
     }
 
     /* Banner-> floating-desin --- */
@@ -273,7 +280,7 @@
     }
 
     .order {
-        margin-top: -60px;
+        margin-top: -30px;
     }
 
     .sub-banner>.laptob {
