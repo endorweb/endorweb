@@ -1,7 +1,7 @@
 /********************************************** Very small mobile device (up to 480px) *********************************************/
 
 /* ______ For Header ______ */
-@media(max-width: 1195px) {
+@media(max-width: 1260px) {
 
     /* Header >  Sprache der Website */
     .wbsite-sprache {
@@ -51,7 +51,16 @@
         width: 80%;
         max-width: 300px;
         height: 100vh;
-        background: rgb(100, 60, 161);
+        background:
+            radial-gradient(circle at 70% 45%,
+                rgba(255, 255, 255, 0.12) 0%,
+                rgba(255, 255, 255, 0.04) 25%,
+                transparent 55%),
+            linear-gradient(135deg,
+                #16083d 0%,
+                #2a1166 45%,
+                #4b2690 100%);
+
         transition: all 0.3s ease;
         z-index: 99;
         padding: 40px 20px 400px;
@@ -81,7 +90,7 @@
     }
 
     .sub-header>div>nav>ul>li>a {
-        font-size: 1.3em;
+        font-size: 1.2em;
         display: block;
         border-bottom: 1px solid #eeeeeeab;
         padding: 10px;
@@ -134,13 +143,24 @@
 
     /*header > Sprache der Website-For-Mobile */
     .wbsite-sprache-mobile {
-        background-color: rgb(100, 60, 161);
+        background:
+            radial-gradient(circle at 70% 45%,
+                rgba(255, 255, 255, 0.12) 0%,
+                rgba(255, 255, 255, 0.04) 25%,
+                transparent 55%),
+            linear-gradient(135deg,
+                #16083d 0%,
+                #2a1166 45%,
+                #4b2690 100%);
+
+        /* background-color: rgb(1, 3, 35); */
+
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: start;
         align-items: center;
         margin-top: 70px;
-        padding: 8px 16px;
+        padding: 13px 16px;
 
     }
 
@@ -155,7 +175,7 @@
 
     .wbsite-sprache-mobile>.sprache>a {
         color: rgb(255, 255, 255);
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-decoration: none;
     }
 
@@ -165,11 +185,15 @@
 }
 
 
+
+
 @media (max-width: 480px) {
 
     /* ______ Banner ______ */
     .main-banner {
         margin-top: -1%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .main-banner h1 {
@@ -177,20 +201,35 @@
         font-size: 11vw;
     }
 
+    .sub-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .order {
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-top: -60px;
+        border-radius: 100px;
+
+    }
+
+    .order>p {
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 15px 10px 10px 15px;
+    }
+
     .banner-titel p {
         width: 100%;
-        font-size: 1.3em;
-    }
-
-    .sub-banner>.banner-image>img {
-        width: 130vw;
-        opacity: 0.4;
-    }
-
-    .project-hamburger {
         font-size: 1.1em;
     }
 
+    /* Banner -> Form */
     .banner-ps {
         top: 6%;
     }
@@ -198,6 +237,61 @@
     .banner-ps>form>.desc-ps>label>textarea {
         height: 210px;
     }
+
+    .project-hamburger {
+        padding: 10px;
+        font-size: 1.1em;
+
+    }
+
+    .project-hamburger>span>i {
+        margin-bottom: 20px;
+    }
+
+    /* Banner -> Images  */
+
+    /* Design background image */
+    .sub-banner>.banner-image>img {
+        width: 130vw;
+        opacity: 0.4;
+    }
+
+    /* Banner -> Laptop image */
+    .sub-banner>.laptob {
+        top: 50px;
+        padding: 15px 0 0 0;
+    }
+
+    .sub-banner>.laptob>img {
+        opacity: 1;
+        width: 88vw;
+        transform: scale(1.3);
+        padding: 0 20px;
+
+    }
+
+    /* Banner-> floating-desin --- */
+    .floating-desin {
+        position: absolute;
+        left: 20px;
+        top: -30px;
+
+    }
+
+    /* Code card */
+    .floating-code {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    .floating-code i {
+        font-size: 30px;
+        color: white;
+    }
+
+
 
     /* ______ About ______ */
     .sub-about {
@@ -452,20 +546,26 @@
 
     form>button {
         font-size: 1.1em;
-
     }
 
     .copyright {
         font-size: 1.1em;
         line-height: 1.5;
     }
-
 }
 
+@media(max-width: 550px) {
 
-
-
-
+    /* Banner -> Benefits */
+    .sub-bannerbenefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 40px;
+        align-items: center;
+        font-size: 1.2em;
+    }
+}
 
 
 
@@ -475,6 +575,8 @@
     /* Banner */
     .main-banner {
         margin-top: -1%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .main-banner h1 {
@@ -482,28 +584,92 @@
         font-size: 10vw;
     }
 
+    .sub-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .order {
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-top: -60px;
+        border-radius: 100px;
+
+    }
+
+    .order>p {
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 15px 10px 10px 15px;
+
+    }
 
     .banner-titel p {
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
-    .sub-banner>.banner-image>img {
-        width: 90vw;
-        opacity: 0.4;
+    /* Banner -> Form */
+    .banner-ps {
+        top: 6%;
     }
 
     .project-hamburger {
         font-size: 1.1em;
     }
 
-    /* .banner-button>a>button {
-        font-size: 1.5em;
-    } */
-
-    .banner-ps {
-        top: 6%;
+    .project-hamburger>span>i {
+        margin-bottom: 20px;
     }
+
+    /* Banner -> Images:  */
+
+    /* Design background image */
+    .sub-banner>.banner-image>img {
+        width: 90vw;
+        opacity: 0.4;
+    }
+
+    /* Banner -> Laptop image */
+    .sub-banner>.laptob {
+        top: 50px;
+        padding: 15px 0 10px 0;
+    }
+
+    .sub-banner>.laptob>img {
+        opacity: 1;
+        width: 75vw;
+        transform: scale(1.3);
+        padding: 0 20px;
+    }
+
+
+    /* Banner-> floating-desin --- */
+    .floating-desin {
+        position: absolute;
+        left: 45px;
+        top: -30px;
+
+    }
+
+    /* Code card */
+    .floating-code {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    .floating-code i {
+        font-size: 30px;
+        color: white;
+    }
+
+
 
     /* About */
     .sub-about {
@@ -689,7 +855,17 @@
         line-height: 1.5;
     }
 
+}
 
+@media(min-width: 550px) and (max-width: 1024px) {
 
-
+    /* Banner -> Benefits */
+    .sub-bannerbenefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        gap: 40px;
+        align-items: center;
+        font-size: 1.2em;
+    }
 }

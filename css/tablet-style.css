@@ -1,4 +1,113 @@
 /**************************************************** Tablet (768px bis 1024px) *****************************************************/
+@media(min-width: 768px) and (max-width: 1024px) {
+
+    /* Banner -> beneftits */
+    .sub-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .order {
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-top: -60px;
+        border-radius: 100px;
+    }
+
+    .order>p {
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 15px 10px 10px 15px;
+
+    }
+
+    /* Banner -> Form */
+    .banner-ps {
+        top: 5%;
+    }
+
+    .project-hamburger>span>i {
+        margin-bottom: 20px;
+    }
+
+
+    /* Banner -> Laptop image */
+    .sub-banner>.laptob {
+        top: 50px;
+        padding: 15px 0 10px 0;
+        margin-bottom: 50px;
+    }
+
+    .sub-banner>.laptob>img {
+        opacity: 1;
+        width: 60vw;
+        /* transform: scale(1.3); */
+        padding: 0 20px;
+
+    }
+
+
+    /* Banner-> floating-desin --- */
+    .floating-desin {
+        position: absolute;
+        left: 60px;
+        top: -30px;
+
+    }
+
+    /* Code card */
+    .floating-code {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    .floating-code i {
+        font-size: 30px;
+        color: white;
+    }
+}
+
+
+@media(min-width:1024px) and (max-width:1100px) {
+
+    /* Banner -> beneftits */
+    .sub-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+
+    .order {
+        margin-top: -60px;
+        font-size: 1em;
+    }
+
+    /* Banner -> Laptop image */
+    .sub-banner>.laptob>img {
+        opacity: 1;
+        width: 50vw;
+        transform: scale(1.5);
+
+    }
+
+    /* Banner-> floating-desin --- */
+    .floating-desin {
+        position: absolute;
+        left: 10px;
+        top: -30px;
+
+    }
+
+}
+
+
 @media (min-width: 768px) and (max-width: 1195px) {
     body {
         overflow: hidden;
@@ -14,16 +123,20 @@
         width: 100%;
     }
 
-    .banner-titel {}
-
     .banner-titel p {
         width: 100%;
         font-size: 1.3em;
     }
 
+    .order {
+        margin-top: -60px;
+    }
+
+    /* Banner -> Form */
     .banner-ps {
         top: 5%;
     }
+
 
     /* About */
     .sub-about {
@@ -81,8 +194,6 @@
     .sub-skills:nth-child(4)>.quote::after {
         width: 18%;
     }
-
-
 
     /* Projects */
     .sub-projects {
@@ -145,4 +256,16 @@
         font-size: 1.5em;
     }
 
+}
+
+@media(min-width: 1195px) and (max-width: 1260px) {
+
+    /* Banner */
+    .main-banner {
+        margin-top: -2px;
+    }
+
+    .order {
+        margin-top: -60px;
+    }
 }

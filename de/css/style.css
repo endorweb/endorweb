@@ -30,7 +30,15 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    background-color: #643ca1;
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
     padding: 20px 30px;
     margin-bottom: 200px;
 }
@@ -57,12 +65,12 @@ body {
 
 .sub-header>div>nav>ul>li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
 .sub-header>div>nav>ul>li>a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: bold;
     color: rgb(255, 255, 255);
     transition: color 0.4s ease;
@@ -83,7 +91,7 @@ body {
     background-color: transparent;
     color: rgb(60, 254, 46);
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -104,7 +112,7 @@ body {
     padding: 12px 16px;
     text-align: left;
     color: rgb(0, 0, 0);
-    font-size: 1.1em;
+    font-size: 1em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.098);
     font-weight: 500;
 }
@@ -134,7 +142,7 @@ body {
     align-items: center;
     gap: 8px;
     border-left: 2px solid white;
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 .wbsite-sprache>div>a {
@@ -162,31 +170,61 @@ body {
 
 /* Banner */
 .main-banner {
-    background-color: #643ca1;
-    padding: 50px 30px;
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
+
+    padding: 80px 30px 50px;
     color: white;
     margin-bottom: 100px;
     margin-top: 50px;
     position: relative;
 }
 
+.sub-banner {
+    display: flex;
+    align-items: center;
+}
+
+.banner-titel>.order>p {
+    border: none;
+}
+
 .order {
     vertical-align: middle;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
 .order>p {
-    font-size: 20px;
+    font-size: 1em;
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
+
+    padding: 10px 30px 10px 5px;
+    border-radius: 100px;
 }
 
 .main-banner h1 {
     margin-top: 5px;
     width: 100%;
-    font-size: 70px;
+    font-size: 3em;
     line-height: 1.3;
     margin-bottom: 50px;
     z-index: 1;
@@ -199,7 +237,7 @@ body {
 }
 
 .banner-titel p {
-    width: 750px;
+    width: 70%;
     line-height: 1.5;
     border-left: 5px solid #3cfe2e;
     padding-left: 15px;
@@ -219,6 +257,64 @@ body {
     opacity: 0.4;
 }
 
+.sub-banner>.laptob {
+    z-index: 1;
+    position: relative;
+}
+
+.sub-banner>.laptob>img {
+    opacity: 1;
+    width: 95vh;
+    transform: scale(1.5);
+    padding-right: 65px;
+}
+
+/* ----- */
+.floating-desin {
+    position: absolute;
+    left: 0;
+    top: -80px;
+
+}
+
+.floating-code,
+.floating-square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 15, 110, 0.75);
+    border: 2px solid rgba(139, 61, 255, 0.8);
+    box-shadow: 0 0 15px rgba(120, 40, 255, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+/* Code card */
+.floating-code {
+    width: 100px;
+    height: 100px;
+    border-radius: 22px;
+    margin-bottom: 30px;
+}
+
+.floating-code i {
+    font-size: 52px;
+    color: white;
+}
+
+/* Square card */
+.floating-square {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+}
+
+.floating-square span {
+    width: 25px;
+    height: 25px;
+    border: 3px solid white;
+    border-radius: 4px;
+}
+
 /* Banner > project-start-button */
 .project-toggle {
     display: none;
@@ -228,22 +324,48 @@ body {
     margin-top: 40px;
 }
 
+.poject-start>a>.view-works {
+    background-color: transparent;
+    border: 1px solid rgba(139, 61, 255, 0.8);
+    padding: 10px 15px;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+}
+
 .project-hamburger {
     background-color: rgb(60, 254, 46);
     color: black;
     border-radius: 100px;
-    padding: 8px 18px;
+    padding: 10px 15px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     cursor: pointer;
+    margin-right: 15px;
+}
+
+.project-hamburger>span>i {
+    margin-left: 10px;
+    background-color: rgb(255, 254, 254);
+    padding: 4px 8px;
+    border-radius: 100px;
 }
 
 .banner-ps {
-    background-color: rgb(100, 60, 161);
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
+
     padding: 27px;
-    padding-top: 55px;
+    padding-top: 35px;
     position: fixed;
-    top: 7%;
+    top: 12%;
     width: 100%;
     max-width: 900px;
     transition: all 0.5s ease;
@@ -259,6 +381,59 @@ body {
 
 .banner-ps>form>.desc-ps>label>textarea {
     height: 260px;
+}
+
+/* ___________ */
+.bannerbenefits {
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 5px;
+    /* box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.256); */
+
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #4b2690 100%);
+}
+
+.sub-bannerbenefits {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+
+.sub-bannerbenefits>div {
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
+
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+
+    padding: 20px;
+    text-align: left;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-bannerbenefits>div>i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.sub-bannerbenefits>div>div>p {
+    margin-bottom: 10px;
 }
 
 /* About */
@@ -415,7 +590,15 @@ hr {
 
 /* hero-Section */
 .main-hero {
-    background-color: rgb(100, 60, 161);
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
     padding: 50px 30px;
     margin-bottom: 100px;
     color: white;
@@ -519,7 +702,15 @@ hr {
 }
 
 .services {
-    background-color: rgb(100, 60, 161);
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
     padding: 30px;
     border-radius: 8px;
 }
@@ -695,7 +886,15 @@ form>button {
 
 .copyright {
     text-align: center;
-    background-color: rgb(100, 60, 161);
+    background:
+        radial-gradient(circle at 70% 45%,
+            rgba(255, 255, 255, 0.12) 0%,
+            rgba(255, 255, 255, 0.04) 25%,
+            transparent 55%),
+        linear-gradient(135deg,
+            #16083d 0%,
+            #2a1166 45%,
+            #4b2690 100%);
     color: white;
     padding: 10px;
     margin-top: 50px;
