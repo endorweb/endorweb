@@ -216,11 +216,8 @@ body {
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
+    margin-left: 10px;
     line-height: 1.5;
-}
-
-.order>p {
-    font-size: 20px;
 
     background:
         radial-gradient(circle at 70% 45%,
@@ -233,8 +230,13 @@ body {
             #4b2690 210%);
 
 
-    padding: 10px 30px 10px 5px;
+    padding: 10px;
     border-radius: 100px;
+}
+
+.order>p {
+    font-size: 20px;
+    width: & //ù;
 }
 
 .main-banner h1 {
@@ -606,14 +608,6 @@ hr {
     border-radius: 5px 5px 0 0;
 }
 
-/* .project-box:nth-child(1)>a>button {
-    margin-top: 46px;
-}
-
-.project-box:nth-child(3)>a>button {
-    margin-top: 46px;
-} */
-
 .project-box>div>a>button {
     background-color: transparent;
     border: none;
@@ -825,7 +819,6 @@ hr {
     bottom: 30px;
     left: 10px;
     z-index: 1000;
-
 }
 
 .whtsp-icon>button {

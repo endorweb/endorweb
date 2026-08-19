@@ -216,13 +216,10 @@ header {
     vertical-align: middle;
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 10px;
     margin-bottom: 30px;
+    margin-right: 10px;
     line-height: 1.6;
-}
-
-.order>p {
-    font-size: 1em;
     background:
         radial-gradient(circle at 70% 45%,
             rgba(255, 255, 255, 0.12) 0%,
@@ -232,10 +229,13 @@ header {
             #16083d 0%,
             #2a1166 45%,
             #4b2690 100%);
-
-    padding: 10px 30px 10px 5px;
     border-radius: 100px;
+    padding: 10px;
+}
 
+.order>p {
+    font-size: 1em;
+    width: 100%;
 }
 
 .main-banner h1 {
@@ -348,6 +348,7 @@ header {
     border-radius: 100px;
     color: white;
     cursor: pointer;
+    font-size: 1em;
 }
 
 .project-hamburger {
