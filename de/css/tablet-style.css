@@ -63,6 +63,7 @@
         height: 80px;
         border-radius: 20px;
         margin-bottom: 30px;
+
     }
 
     .floating-code i {
@@ -274,7 +275,7 @@
 
 
 
-@media(min-width: 1308px) {
+@media(min-width: 1300px) {
 
     .sub-header>div>nav>ul>li>a {
 
