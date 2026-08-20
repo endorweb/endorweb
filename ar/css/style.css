@@ -64,6 +64,7 @@ body {
 
 .sub-header>div>nav>ul {
     list-style: none;
+    margin-left: 100px;
 }
 
 .sub-header>div>nav>ul>li {
@@ -73,7 +74,7 @@ body {
 
 .sub-header>div>nav>ul>li>a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
     color: rgb(255, 255, 255);
     transition: color 0.4s ease;
@@ -93,7 +94,7 @@ body {
     background-color: transparent;
     color: rgb(60, 254, 46);
     cursor: pointer;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -133,52 +134,53 @@ body {
 
 }
 
-/* Sprache der Website-For-Mobile */
-.wbsite-sprache-mobile {
+/* Header >  Sprache der Website */
+.language-switcher {
+    position: relative;
+    z-index: 100;
+}
+
+.language-icon {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgba(0, 0, 0, 0.402);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.language-switcher .language-dropdown {
     display: none;
 }
 
-/* Header >  Sprache der Website */
-.wbsite-sprache {
+.language-switcher:hover .language-dropdown {
+    display: block;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background: white;
+    padding: 8px 0;
+    min-width: 130px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+}
+
+.language-dropdown a {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 8px 12px;
+    color: #222;
+    font-size: 1em;
 }
 
-.wbsite-sprache {
-    border-right: 2px solid white;
-    padding-right: 30px;
-}
-
-.wbsite-sprache>div:nth-child(3) {
-    background-color: rgb(238, 238, 238);
-}
-
-.wbsite-sprache>div:nth-child(3)>a {
-    color: black;
-}
-
-.wbsite-sprache>div>a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.1em;
-}
-
-.wbsite-sprache>div>a:hover {
-    color: black;
-}
-
-.sprache {
-    border: 1px solid white;
-    padding: 4px 10px;
-    border-radius: 10px;
-    transition: background-color 0.4s ease;
-}
-
-.sprache:hover {
-    background-color: rgb(236, 236, 236);
-    padding: 4px 10px;
-    border-radius: 10px;
+.language-dropdown a:hover {
+    background: #f2f2f2;
 }
 
 /* Banner */
@@ -236,7 +238,7 @@ body {
 
 .order>p {
     font-size: 20px;
-    width: & //ù;
+    width: 100%;
 }
 
 .main-banner h1 {
@@ -285,8 +287,7 @@ body {
 
 .sub-banner>.laptob>img {
     opacity: 1;
-    width: 95vh;
-    transform: scale(1.5);
+    width: 70vh;
     padding-left: 65px;
 }
 

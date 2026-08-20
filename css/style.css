@@ -35,7 +35,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 20px 30px;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
     z-index: 1000;
 
     background:
@@ -67,6 +67,7 @@ header {
 
 .sub-header>div>nav>ul {
     list-style: none;
+    margin-right: 100px;
 }
 
 .sub-header>div>nav>ul>li {
@@ -137,50 +138,54 @@ header {
     column-gap: 20px;
 }
 
+/* Header >  Sprache der Website */
+.language-switcher {
+    position: relative;
+    z-index: 100;
+}
 
-/* Sprache der Website-For-Mobile */
-.wbsite-sprache-mobile {
+.language-icon {
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid rgba(0, 0, 0, 0.402);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.language-switcher .language-dropdown {
     display: none;
 }
 
-/* Header >  Sprache der Website */
-.wbsite-sprache {
+.language-switcher:hover .language-dropdown {
+    display: block;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 130%;
+    right: 0;
+    background: white;
+    padding: 8px 0;
+    min-width: 130px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+}
+
+.language-dropdown a {
     display: flex;
     align-items: center;
     gap: 8px;
-    border-left: 2px solid white;
-    padding-left: 30px;
+    padding: 8px 12px;
+    color: #222;
+    font-size: 1em;
+
 }
 
-.wbsite-sprache>div:nth-child(1) {
-    background-color: rgb(238, 238, 238);
-}
-
-.wbsite-sprache>div:nth-child(1)>a {
-    color: black;
-}
-
-.wbsite-sprache>div>a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.1em;
-}
-
-.wbsite-sprache>div>a:hover {
-    color: black;
-}
-
-.sprache {
-    border: 1px solid white;
-    padding: 4px 10px;
-    border-radius: 10px;
-    transition: background-color 0.4s ease;
-}
-
-.sprache:hover {
-    background-color: rgb(236, 236, 236);
-    padding: 4px 10px;
-    border-radius: 10px;
+.language-dropdown a:hover {
+    background: #f2f2f2;
 }
 
 /* ******************* Banner ******************* */
@@ -195,11 +200,10 @@ header {
             #2a1166 45%,
             #4b2690 100%);
 
-
-    padding: 80px 30px 50px;
+    padding-left: 30px;
     color: white;
     margin-bottom: 100px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
 }
 
@@ -217,7 +221,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    /* margin-top: -20px; */
     margin-right: 10px;
     line-height: 1.6;
     background:
@@ -231,11 +236,13 @@ header {
             #4b2690 100%);
     border-radius: 100px;
     padding: 10px;
+
 }
 
 .order>p {
     font-size: 1em;
     width: 100%;
+    border: none;
 }
 
 .main-banner h1 {
@@ -281,9 +288,8 @@ header {
 
 .sub-banner>.laptob>img {
     opacity: 1;
-    width: 95vh;
-    transform: scale(1.5);
-    padding-right: 65px;
+    width: 70vh;
+    padding-right: 80px;
 }
 
 /* ----- */

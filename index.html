@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Flags-Icons -->
+    <link rel="stylesheet" href="css/flag-icons-main/css/flag-icons.min.css">
+
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 
@@ -49,7 +52,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT5BQ9K4WQ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() {dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-DT5BQ9K4WQ');
@@ -114,37 +117,29 @@
             </div>
 
             <!-- Sprache der Website -->
-            <div class="wbsite-sprache">
-                <div class="sprache">
-                    <a href="https://endorweb.com/">English</a>
-                </div>
-                <div class="sprache">
-                    <a href="https://endorweb.com/de/index.html">Deutsch</a>
-                </div>
-                <div class="sprache">
-                    <a href="https://endorweb.com/ar/index.html">العربية</a>
-                </div>
-                <!-- Dark Mode (JS) -->
-                <div>
-                    <button id="btn">☀️</button>
+            <div class="language-switcher">
+
+                <span class="language-icon">A文▾</span>
+
+                <div class="language-dropdown">
+                    <a href="https://endorweb.com/">
+                        <span class="fi fi-gb"></span>
+                        English
+                    </a>
+
+                    <a href="https://endorweb.com/de/index.html">
+                        <span class="fi fi-de"></span>
+                        Deutsch
+                    </a>
+
+                    <a href="https://endorweb.com/ar/index.html">
+                        <span class="fi fi-sa"></span>
+                        العربية
+                    </a>
                 </div>
 
             </div>
-
-        </div>
     </header>
-    <!-- Sprache der Website-For-Mobile -->
-    <div class="wbsite-sprache-mobile">
-        <div class="sprache" style="background-color: rgb(236, 236, 236);">
-            <a href="https://endorweb.com/" style="color: black;">English</a>
-        </div>
-        <div class="sprache">
-            <a href="https://endorweb.com/de/index.html">Deutsch</a>
-        </div>
-        <div class="sprache">
-            <a href="https://endorweb.com/ar/index.html">العربية</a>
-        </div>
-    </div>
 
     <!-- Main-Content -->
     <main>

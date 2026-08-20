@@ -31,11 +31,14 @@
         height: 3px;
         width: 100%;
         background: #ffffff;
+        border-radius: 2px;
         transition: all 0.3s ease;
     }
 
     .hamburger span:nth-child(2) {
         width: 70%;
+        align-self: flex-end;
+
     }
 
     .menu {
@@ -75,6 +78,11 @@
 
     .menu-toggle:checked+.hamburger span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .sub-header>div>nav>ul {
+        list-style: none;
+        margin-right: 0;
     }
 
     .sub-header>div>nav>ul>li {
@@ -134,56 +142,26 @@
         column-gap: 20px;
     }
 
-    /*header > Sprache der Website-For-Mobile */
-    .wbsite-sprache-mobile {
-        background:
-            radial-gradient(circle at 70% 45%,
-                rgba(255, 255, 255, 0.12) 0%,
-                rgba(255, 255, 255, 0.04) 25%,
-                transparent 55%),
-            linear-gradient(135deg,
-                #16083d 0%,
-                #2a1166 45%,
-                #4b2690 100%);
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin-top: 70px;
-        padding: 13px 16px;
-
+    /*header > Sprache der Website */
+    .language-switcher {
+        right: 48px;
     }
 
-    .wbsite-sprache-mobile>.sprache {
-        border: revert;
-        border-radius: 8px;
-        padding-left: 10px;
-        border-left: 2px solid white;
-        border-right: 2px solid white;
-        margin-right: 10px;
+    .language-icon {
+        font-size: 13px;
     }
 
-    .wbsite-sprache-mobile>.sprache>a {
-        color: rgb(255, 255, 255);
-        font-size: 1.1em;
-        text-decoration: none;
-    }
-
-    .sprache:hover {
-        background-color: revert;
-    }
 }
-
-
 
 
 @media (max-width: 480px) {
 
     /* Banner */
     .main-banner {
-        margin-top: -1%;
         padding-right: 20px;
         padding-left: 20px;
+        padding-top: 100px;
+
     }
 
     .main-banner h1 {
@@ -203,14 +181,13 @@
         display: flex;
         align-items: center;
         gap: 3px;
-        margin-top: -60px;
         border-radius: 100px;
     }
 
     .order>p {
         font-size: 1em;
         line-height: 1.5;
-        padding: 15px 10px 10px 15px;
+        padding: 10px;
     }
 
     .banner-titel p {
@@ -372,7 +349,6 @@
     .project-titel p {
         width: 100%;
         padding-right: revert;
-
     }
 
     .sub-projects {
@@ -553,20 +529,14 @@
 
 
 
-
-
-
-
-
-
 /********************************************** Medium mobile device (481px to 767px) **************************************/
 @media (min-width: 481px) and (max-width: 768px) {
 
     /* Banner */
     .main-banner {
-        margin-top: -1%;
         padding-right: 20px;
         padding-left: 20px;
+        padding-top: 100px;
     }
 
     .sub-banner {
@@ -586,7 +556,6 @@
         display: flex;
         align-items: center;
         gap: 3px;
-        margin-top: -60px;
         border-radius: 100px;
 
     }
@@ -594,7 +563,6 @@
     .order>p {
         line-height: 1.5;
         padding: 15px 10px 10px 15px;
-
     }
 
     .banner-titel p {
